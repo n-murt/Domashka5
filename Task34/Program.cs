@@ -11,7 +11,7 @@ class Program
         Console.WriteLine($"Количество чётных чисел в массиве - {Program.EvenCount(4)}");
     }
 
-    static int EvenCount(int number1)
+	    static int EvenCount(int number1)
     {
         Random rand = new Random();
         int[] array = new int[number1];
@@ -19,7 +19,7 @@ class Program
         for (int i = 0; i < array.Length; i++)
         {
             array[i] = rand.Next(100, 999);
-            // Console.Write($"{array[i]} ");
+            Console.Write($"{array[i]} ");
         }
 
         for (int k = 0; k < array.Length; k++)
